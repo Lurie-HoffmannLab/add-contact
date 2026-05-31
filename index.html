@@ -9,7 +9,7 @@
       font-family: Arial, sans-serif;
       text-align: center;
       margin-top: 80px;
-      background: #f5f5f5;
+      background: white;
     }
 
     .logo {
@@ -18,7 +18,7 @@
     }
 
     .icon {
-      width: 180px;
+      width: 90px; /* half of 180px */
       margin: 20px auto;
       display: block;
     }
@@ -37,19 +37,25 @@
     .button:hover {
       background-color: #0056b3;
     }
+
+    .instructions {
+      font-weight: bold;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- TOP LOGO (CENTERED ABOVE EVERYTHING) -->
+  <!-- TOP LOGO -->
   <img class="logo" src="lurie_logo.png" alt="Lurie Logo">
 
   <!-- MAIN ICON -->
   <img class="icon" src="caring_contacts_logo.jpg" alt="Contact Icon">
 
-  <h1>My Contact Card</h1>
-  <p>Tap below, SCROLL DOWN, and click "Save New Contact"</p>
+  <p class="instructions">
+    Tap below, SCROLL DOWN, and<br>
+    click "Save New Contact"
+  </p>
 
   <a class="button" href="contact.vcf" download>
     Save Contact
